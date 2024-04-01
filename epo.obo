@@ -1,0 +1,71 @@
+format-version: 1.2
+import: https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2017-10-20/ppo.owl
+ontology: http://www.semanticweb.org/chgiraldoesc/ontologies/2024/3/epo
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/PO_0009046>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/PO_0009049>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/PPO_0001026>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/PPO_0001030>))\nDeclaration(Class(<http://www.semanticweb.org/chgiraldoesc/ontologies/2024/3/epo#immature_floral_structure>))\nDeclaration(Class(<http://www.semanticweb.org/chgiraldoesc/ontologies/2024/3/epo#mature_floral_structure>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/PO_0009046> (<http://purl.obolibrary.org/obo/PO_0009046>)\n\n\n# Class: <http://purl.obolibrary.org/obo/PO_0009049> (<http://purl.obolibrary.org/obo/PO_0009049>)\n\n\n# Class: <http://purl.obolibrary.org/obo/PPO_0001026> (<http://purl.obolibrary.org/obo/PPO_0001026>)\n\n\n# Class: <http://purl.obolibrary.org/obo/PPO_0001030> (<http://purl.obolibrary.org/obo/PPO_0001030>)\n\n\n# Class: <http://www.semanticweb.org/chgiraldoesc/ontologies/2024/3/epo#immature_floral_structure> (<http://www.semanticweb.org/chgiraldoesc/ontologies/2024/3/epo#immature_floral_structure>)\n\n\n# Class: <http://www.semanticweb.org/chgiraldoesc/ontologies/2024/3/epo#mature_floral_structure> (<http://www.semanticweb.org/chgiraldoesc/ontologies/2024/3/epo#mature_floral_structure>)\n\n\n\nDisjointClasses(<http://purl.obolibrary.org/obo/PO_0009046> <http://purl.obolibrary.org/obo/PO_0009049> <http://purl.obolibrary.org/obo/PPO_0001026> <http://purl.obolibrary.org/obo/PPO_0001030> <http://www.semanticweb.org/chgiraldoesc/ontologies/2024/3/epo#immature_floral_structure> <http://www.semanticweb.org/chgiraldoesc/ontologies/2024/3/epo#mature_floral_structure>)\n)
+
+[Term]
+id: PO:0000056 ! flower bud
+is_a: PPO:0001027 ! unopened floral structure
+
+[Term]
+id: PO:0000057 ! inflorescence bud
+is_a: immature_floral_structure
+is_a: PPO:0001027 ! unopened floral structure
+
+[Term]
+id: PO:0009046 ! flower
+disjoint_from: PO:0009049 ! inflorescence
+
+[Term]
+id: PPO:0001033 ! open flower
+is_a: mature_floral_structure
+
+[Term]
+id: PPO:0001035 ! senesced flower
+is_a: mature_floral_structure
+
+[Term]
+id: PPO:0001043 ! ripening fruit
+is_a: developing_fruit
+
+[Term]
+id: bursting_inflorescence_bud
+is_a: immature_unopened_flower
+disjoint_from: intermediate_bud
+
+[Term]
+id: developing_fruit
+is_a: PO:0009001 ! fruit
+disjoint_from: senescing_fruit
+
+[Term]
+id: forming_fruit
+is_a: developing_fruit
+
+[Term]
+id: immature_floral_structure
+is_a: PPO:0001025 ! floral structure
+
+[Term]
+id: immature_unopened_flower
+is_a: immature_floral_structure
+is_a: PPO:0001032 ! unopened flower
+disjoint_from: mature_unopened_flower
+
+[Term]
+id: intermediate_bud
+is_a: immature_unopened_flower
+
+[Term]
+id: mature_floral_structure
+is_a: PPO:0001025 ! floral structure
+
+[Term]
+id: mature_unopened_flower
+is_a: mature_floral_structure
+is_a: PPO:0001032 ! unopened flower
+
+[Term]
+id: senescing_fruit
+is_a: PO:0009001 ! fruit
+
