@@ -3,4 +3,4 @@ The Eucalypt Phenology Ontology (EPO) is an ontology that describes the reproduc
 
 EPO aims to standardize and organize knowledge about the eucalypt reproductive structures and stages to facilitate data integration, analysis and communication among students, researchers, practitioners, foresters, and ecologists.
 
-This ontology is linked to the article "Definition of reproductive structures in Eucalyptus for phenological data collection" by Giraldo E. et. al. (in press)
+This ontology is linked to the article "Definition of reproductive structures in Eucalyptus for phenological data collection" by [Giraldo Escobar et. al. (2024)](https://rdcu.be/d0gS4)
